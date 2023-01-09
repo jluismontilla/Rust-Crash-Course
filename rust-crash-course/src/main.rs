@@ -1,7 +1,8 @@
 #![deny(clippy::all)]
 
-fn foo(_i: &i32) {
+fn foo() {
     let _z = 42;
+    println!("Z = {}", _z);
 }
 fn main() {
     let x = 5;
@@ -10,5 +11,5 @@ fn main() {
     println!("X = {}", x);
     println!("Y = {}", y);
 
-    foo(y);
+    foo();
 }
